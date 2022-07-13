@@ -64,23 +64,23 @@
   }
 
   const app = {
-    initMenu: function(){
+    initMenu: function () {
       const thisApp = this;
 
-      console.log('thisApp.data', thisApp.data);
+      console.log('thisApp.data: ', thisApp.data);
 
       for (let productData in thisApp.data.products) {
         new Product(productData, thisApp.data.products[productData]);
       }
     },
 
-    initData: function(){
+    initData: function () {
       const thisApp = this;
 
-      thisApp.data = dataSource
+      thisApp.data = dataSource;
     },
 
-    init: function(){
+    init: function () {
       const thisApp = this;
       console.log('*** App starting ***');
       console.log('thisApp:', thisApp);
@@ -89,11 +89,9 @@
       console.log('templates:', templates);
       thisApp.initData();
       thisApp.initMenu();
-    },
+    }
   };
 
-  const testProduct = new Product();
-  console.log('testProduct', testProduct);
-
   app.init();
+
 }
