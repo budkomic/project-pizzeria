@@ -53,15 +53,15 @@
   };
 
   class Product {
-    constructor(id, data) { // Wytłumaczyć, jak działa konstruktor
+    constructor(id, data) { 
       const thisProduct = this;
 
       thisProduct.id = id;
       thisProduct.data = data;
 
-      thisProduct.renderInMenu(); //Dlaczego wyłowanie jest w tym miejscu ?
+      thisProduct.renderInMenu(); 
       thisProduct.getElements();
-      thisProduct.initAccordion(); // Dlaczego wyłowanie jest w tym miejscu ?
+      thisProduct.initAccordion(); 
       thisProduct.initOrderForm();
       thisProduct.initAmountWidget();
       thisProduct.processOrder();
