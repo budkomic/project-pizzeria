@@ -305,6 +305,22 @@
     }
   }
 
+  class Cart{
+    constructor(element){
+      const thisCart = this;
+		
+      thisCart.products = [];
+		
+      thisCart.getElements(element);
+      // console.log('new Cart', thisCart);
+      thisCart.initActions();
+    }
+	
+    getElements(element){
+      const thisCart = this;
+		
+      thisCart.dom = {};
+
   const app = {
     initMenu: function () {
       const thisApp = this;
