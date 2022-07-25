@@ -389,7 +389,7 @@
       const thisApp = this;
 
       const cartElem = document.querySelector(select.containerOf.cart);
-      thisApp.cart = new this.cart(cartElem);
+      thisApp.cart = new Cart(cartElem);
     }
   };
 
